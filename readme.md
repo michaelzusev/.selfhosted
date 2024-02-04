@@ -4,3 +4,5 @@
 1. `docker volume create portainer_data`
 2. `docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest`
 
+### Arr-stack
+Make sure to create all volumes for volume bind user:group 1000:1000 or else run into permission issues
